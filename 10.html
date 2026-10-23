@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradingView Dark</title>
+  <style>
+    /* Remove default margins, scrollbars, and white borders */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #191919; /* Exact Notion Dark Mode background */
+      border: none;
+    }
+    .tradingview-widget-container {
+      width: 100% !important;
+      height: 100% !important;
+      border: none !important;
+    }
+    iframe {
+      border: none !important;
+    }
+  </style>
+</head>
+<body>
+  <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-economic-calendar.js"></script>
+
+<tv-economic-calendar countries="us,ru,eu,fr,de,gb,jp" high-importance-only theme="dark"></tv-economic-calendar>
+</body>
+</html>
